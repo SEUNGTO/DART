@@ -93,9 +93,6 @@ result['현금순환주기(CCC)'] = result['현금순환주기(CCC)'].apply(lamb
 result['현금순환주기(CCC)'] = result['현금순환주기(CCC)'].astype(float)
 result['ETF코드'] = result['ETF코드'].astype(str)
 
-import pdb
-pdb.set_trace()
-
 result.to_sql(
     'fs_etf_ratio', 
     con = engine, 
@@ -120,12 +117,3 @@ result.to_sql(
         '현금순환주기(CCC)' : Numeric(18, 6),
         'ETF코드' : String(6),
     },)
-
-
-# result.to_sql(
-#     'fs_etf_ratio', 
-#     con = engine, 
-#     if_exists='replace', 
-#     index = False, 
-
-#     )

@@ -207,11 +207,23 @@ marimo/_lsp/
 __marimo__/
 
 
+# configuration
+config.py
+test.py
+
 # folder
 extracted
 zip
+working
+report
+key
+data
+detail
+final
+stock
 
 # data file
 *.xlsx
 *.xls
 *.tsv
+*.zip
